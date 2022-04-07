@@ -10,12 +10,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded());
 app.use(express.json());
 // http logger
-app.use(morgan('combined'))
+app.use(morgan("combined"))
 
 // template engine
-app.engine('handlebars', hbs.engine());
+   app.engine('handlebars', hbs.engine());
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, 'resources', 'views'));
+    app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // console.log('PATH:', path.join(__dirname, 'resources/views'))
 
@@ -34,4 +34,6 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 // });
 // route init
 route(app);
-app.listen(port, () => console.log(`Example app listening on port ${port}`))
+app.listen(port, () => 
+console.log(`Example app listening on port ${port}`)
+);
