@@ -19,19 +19,19 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // console.log('PATH:', path.join(__dirname, 'resources/views'))
 
-app.get('/', function (req, res) {
-  res.render('home');
-});
+// app.get('/', function (req, res) {
+//   res.render('home');
+// });
 
 // app.get('/search', function (req, res) {
 
 //   res.render('search');
 // });
 
-app.post('/search', function (req, res) {
-  console.log(req.body);
-  res.send('');
-});
+// app.post('/search1', function (req, res) {
+//   console.log(req.body);
+//   res.send('');
+// });
 // route init
 route(app);
 app.listen(port, () => console.log(`Example app listening on port ${port}`))
